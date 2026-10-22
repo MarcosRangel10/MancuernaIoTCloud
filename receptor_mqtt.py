@@ -52,7 +52,9 @@ def conectar_mysql():
             port=DB_PORT,
             user=DB_USER,
             password=DB_PASSWORD,
-            database=DB_NAME
+            database=DB_NAME,
+            ssl_disabled=False,
+            connection_timeout=15
         )
 
         return conexion
